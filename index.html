@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My 201 0a demo</title>
+    <meta name="description" content="This is my page about the 201 01" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <h1>Welcome to Sam's page</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main-container container"></div>
+      <p>
+        What is your name?
+      </p>
+      <p>
+        What is your favourite colour?
+      </p>
+      <p>
+        What is your favourite country to visit?
+      </p>
+      <p>
+        What is your favourite drink?
+      </p>
+    </main>
+    <footer>
+      <div class="footer-container container"></div>
+    </footer>
+    <script>
+      console.log("I can confirm that this log has logged");
+
+      let user;
+      let myFavColor;
+      let color;
+
+      alert("Hi, I'm Sam - welcome to my site!");
+
+      function userName() {
+        user = prompt("Please, tell me your name so we can get to know eachother?");
+        alert("Welcome to my site " + user);
+        console.log(user);
+      }
+
+      userName();
+
+      function favColor() {
+        color = prompt(user + ", what is your favourite colour?").toLowerCase();
+        console.log(color);
+
+        if (color === "green") {
+          myFavColor = "green too!";
+        } else {
+          myFavColor = "green.";
+        }
+
+        alert("Nice, " + color + " is a great color. My favourite color is " + myFavColor);
+      }
+
+      favColor();
+    </script>
+  </body>
+</html>
